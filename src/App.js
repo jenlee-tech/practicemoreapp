@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <h1>Hi there!</h1>
-      {showParagraph && <p>The state has been clicked positive</p>}
+      {showParagraph}
       <Button onClick={handleClickButton}>Click Me</Button>
     </div>
   );

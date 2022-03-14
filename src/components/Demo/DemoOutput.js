@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function DemoOutput() {
-  return <div>DemoOutput</div>;
+export default function DemoOutput(props) {
+  return <p>{props.show ? "This is a paragraph" : ""}</p>;
 }
