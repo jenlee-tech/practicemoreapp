@@ -10,12 +10,13 @@ function App() {
     setShowParagraph((prevShowParagraph) => !prevShowParagraph);
   };
 
+  console.log("re-evaluating the entire function");
+
   return (
     <div className="app">
       <h1>Hi there!</h1>
-      {showParagraph}
       <Button onClick={handleClickButton}>Click Me</Button>
-      <DemoOutput show={showParagraph}></DemoOutput>
+      <DemoOutput show={false}></DemoOutput>
     </div>
   );
 }
