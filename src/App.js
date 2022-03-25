@@ -6,6 +6,7 @@ import DemoOutput from "./components/Demo/DemoOutput";
 function App() {
   const [showParagraph, setShowParagraph] = useState(false);
   const [allowToggle, setAllowToggle] = useState(false);
+  //state is only initalized once when the component initially evaluated.  After that, it will note the difference in state but not re-initialized (unless, it was taken off the DOM and the application starts again)
 
   const handleClickButton = useCallback(() => {
     if (allowToggle) {
